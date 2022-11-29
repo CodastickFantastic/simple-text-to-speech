@@ -10,7 +10,7 @@ body{
 
 #header{
     margin: 0 auto;
-    width: 20%;
+    width: 25%;
     text-align: center;
     background-color: rgb(211, 170, 134);
     height: auto;
@@ -23,13 +23,15 @@ body{
     height: auto;
     border-radius: 20px;
     background-color: rgb(211, 170, 134);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #main-content #text-area{
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    text-align: center;
 }
 
 #main-content #text-area textarea{
@@ -41,13 +43,57 @@ body{
     font-weight: bold;
 }
 
-#main-content #text-area button{
+#main-content label{
+    text-align: center;
+    border-bottom: 2px dashed bisque;
+    width: 90%;
+}
+
+#main-content #option-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+#main-content #txt-lang{
+    width: auto;
+    background-color: transparent;
+    margin: 5px;
+    padding: 3px;
+    border: 2px solid bisque;
+    border-radius: 20px;
+}
+
+#main-content #speech-speed{
+    width: 50%;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid bisque;
+    border-radius: 20px;
+}
+
+#main-content #speech-speed::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: bisque;
+    height: 14px;
+    width: 14px;
+    border-radius: 50px;
+}
+
+#main-content #speech-speed::-webkit-slider-thumb:hover{
+    background-color: rgb(128, 91, 47);
+}
+
+#main-content button{
     margin: 10px;
+    padding: 6px;
     background-color: bisque;
     border-radius: 20px;
     border: none;
 }
 
-#main-content #text-area button:hover{
+#main-content button:hover{
     transform: scale(1.2);
 }
