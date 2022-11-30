@@ -8,21 +8,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section id="header">
+    <section class="header">
         <h1>Text to Speech</h1>
     </section>
     <section id="main-content">
         <div id="text-area">
-            <textarea name="text" id="text" placeholder="Write here text that you want synthesis to speech"></textarea>
+            <textarea id="text" placeholder="Write here text that you want synthesis to speech"></textarea>
         </div>
         <div id="option-area">
             <label for="change-voice">Choose Voice and Language</label>
                 <select id="change-voice"></select>
             <label for="speech-speed" id="slider-relative" >Speech speed: <span id="speech-speed-value">1.2</span></label>
-                <input id="speech-speed" type="range" min="0.1" max="4" value="1.2" step="0.1">
+                <input id="speech-speed" type="range" min="0.1" max="2" value="1.2" step="0.1">
         </div>
-        
-        <div id="control-buttons"><button>Let it speak</button></div>
+        <button>Let it speak</button>
+    </section>
+    <section class="header">
+        <h1>Speech to Text</h1>
+    </section>
+    <section id="speech-to-txt">
+        <div><button>Start recording</button><button>Stop Recording</button></div>
+        <label for="recording-language">Choose your language: 
+            <select id="recording-language">
+                <option value="pl-PL">Polish</option>
+                <option value="en-EN">English</option>
+                <option value="fr-FR">French</option>
+                <option value="de-DE">German</option>
+            </select>
+        </label>
+        <textarea id="collected-text" placeholder ="Start talking to see the result"disabled></textarea>
     </section>
     <script src="app.js"></script>
 </body>
