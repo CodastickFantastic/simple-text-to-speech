@@ -1,6 +1,6 @@
 # Simple Text To Speech App
 
-## App Description
+## :bookmark_tabs: App Description
 The application consists of 2 modules
   
 * Text to speech module<br>
