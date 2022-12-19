@@ -7,4 +7,6 @@ The application consists of 2 modules
   Allows to transfer text to speech according to selected language and voice gender.
 * Speech to text<br>
   This module has ability to convert speech to text within 4 languages
-
+  
+## :hammer_and_wrench: Build With
+* Voice Recognition Google API
